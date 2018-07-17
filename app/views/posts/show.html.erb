@@ -1,0 +1,65 @@
+
+
+      <!-- <%= link_to "Create a new post ", new_post_path(@post), class: "button" %> <br> <<Yeni Post Oluştur>> -->
+
+<div id="container">
+  <div class="posts ">
+       <div class="yan-panel ">
+         <div class="kategori">
+           <h2>Kategoriler</h2>
+           <ul>
+             <li>asdasdasd</li>
+             <li>asdasdasd</li>
+             <li>asdasdasd</li>
+           </ul>
+         </div>
+         <div class="sosyal-medya">
+           <h2>Sosyal Medya</h2>
+         <ul>
+           <li>Twitter</li>
+           <li>Facebook</li>
+           <li>İnstagram</li>
+         </ul>
+         </div>
+       </div>
+
+
+
+         <div class="ayrinti">
+         <div class="baslik">
+               <h1> <%= @post.title %> </h1>
+         </div>
+       <div class="icerik">
+          <p><%= @post.content %></p>
+       </div>
+       <div class="yorum">
+         <br> <br>
+         <h1>Yorumlar</h1>
+         <%= render @post.comments %>
+          <%= render 'comments/form' %>
+       </div>
+       <!--  Admin Kısmı
+           Sil ve edit button
+
+          <button class="editB"type="button" name="editB"><%= link_to 'Edit', edit_post_path(@post), class: "button" %> </button>
+          <button class="silB"type="button" name="silB"><%= link_to 'Delete', post_path(@post), method: :delete , data: {confirm: "Are you sure? "}, class: "button" %> </button> <br>
+      -->
+
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+ </div>
+
+
+
+</div>

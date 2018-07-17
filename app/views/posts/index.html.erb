@@ -1,0 +1,28 @@
+
+
+      <!-- <%= link_to "Create a new post ", new_post_path(@post), class: "button" %> <br> <<Yeni Post Oluştur>> -->
+
+<div id="container" >
+  <div class="posts ">
+       <div class="yan-panel ">
+        <div class="kategori">
+           <h2>Kategoriler</h2>
+           <ul>
+             <li>asdasdasd</li>
+             <li>asdasdasd</li>
+             <li>asdasdasd</li>
+
+           </ul>
+         </div>
+
+       </div>
+
+      <%= @post.each do |post| %>
+
+         <div class="post">
+           <a href="/posts/<%= post.id%>"> <%= post.title %></a>
+          <p> <%= truncate(post.content, length: 500) %><br></p>
+          
+      <%end%>
+ </div>
+</div>

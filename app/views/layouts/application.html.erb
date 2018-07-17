@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyBlog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+
+
+
+
+    <div class="header">
+      <div class="foto">
+
+      </div>
+      <div class="yazi">
+
+      </div>
+    </div>
+
+    <nav class="navbar navbar-inverse" id="myNavbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/posts">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+      </ul>
+    <!--  <form class="navbar-form right" action="/action_page.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+    </div>
+  </nav>
+
+    </div>
+
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("myNavbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+    <%= yield %>
+  </body>
+
+  <footer>
+    <div id="conteiner">
+      <div id="sosyal-medya">
+
+        <ul>
+             <a href="http://facebook.com/"><li id="fb">FACEBOOK<div></div></li></a>
+             <a href="http://twitter.com/"><li id="tw">TWITTER<div></div></li></a>
+             <a href="http://pinterest.com/"><li id="pin">PINTEREST<div></div></li></a>
+             <a href="http://gplus.to/"><li id="gplus">GOOGLE+<div></div></li></a>
+             <a href="http://web.instagram.com/"><li id="ins">INSTAGRAM<div></div></li></a>
+             <a href="http://www.flickr.com/"><li id="flickr">FLICKR<div></div></li></a>
+             <a href="http://tr.linkedin.com/"><li id="in">LINKEDIN<div></div></li></a>
+             <a href="http://feeds.feedburner.com/"><li id="rss">RSS<div></div></li></a>
+<br>
+
+      </ul>
+      </div>
+
+         <h5  class="sakli">
+                 Tüm Hakları Saklıdır. &copy
+         </h5>
+    </div>
+
+  </footer>
+</html>

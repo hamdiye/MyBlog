@@ -1,0 +1,203 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ *= require_self
+ */
+ /*
+ *= require rails_bootstrap_forms
+ */
+ @import "normalize";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+html, body {
+  font-family: 'Raleway' , sans-serif;
+}
+
+body{
+  background:  #f5f5f5;
+}
+
+
+#sosyal-medya {font-family: 'Roboto Condensed', sans-serif; margin-left: 300px; margin-bottom: 50px;}
+#sosyal-medya ul {margin-left: -40px;}
+#sosyal-medya ul a {color: #fff;text-decoration: none;}
+#sosyal-medya ul a li {float: left;list-style: none;height: 58px;width: 68px;margin: 3px 3px 0 0;text-align: center;font-size: 12px;background: #2c2c2c;display: block;    -webkit-transition: all .4s ease;-moz-transition: all .4s ease;transition: all .4s ease;padding: 9px 0 0 0;}
+#sosyal-medya ul a li div {background-image: url(http://buraksah.in/wp-content/uploads/2013/02/sprite-sosyal1.png);margin:5px 0 0 26px;height: 15px;width: 15px;}
+li#fb:hover {background: #38589f}
+li#tw:hover {background: #44b0e3}
+li#pin:hover {background: #cb2229}
+li#gplus:hover {background: #cd4132}
+li#ins:hover {background: #d2c3ac}
+li#flickr:hover {background: #ff0085}
+li#in:hover {background: #64b7d2}
+li#rss:hover {background: #f8bc2d}
+li#fb div {background-position: 0 0;}
+li#tw div {background-position: 0 -16px;}
+li#pin div {background-position: 0 -117px;}
+li#gplus div {background-position: 0 -99px;}
+li#ins div {background-position: 0 -64px;}
+li#flickr div {background-position: 0 -84px;}
+li#in div {background-position: 0 -49px;}
+li#rss div {background-position: 0 -32px;}
+
+.footer{
+  background: grey;
+  height: 300px;
+  width: 100%;
+  height: 100%;
+}
+.sakli{
+  margin-left: 500px;
+}
+
+
+.header{
+  background: url('c.jpg');
+  height: 300px;
+  width: 100%;
+
+}
+/*.foto {
+  width: 170px;
+  height: 170px;
+  background: black;
+  border-radius: 100px;
+  position: absolute;
+  left: 500px;
+  top: 40px;
+
+  }*/
+.navbar{
+
+}
+.posts{
+  padding: 30px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color:white;
+  margin-bottom: 50px;
+  border-style: groove;
+
+}
+.post a{
+  font-size: 30px;
+  color: #8b3a3a;
+  font-weight: bold;
+}
+.yan-panel{
+  float: right;
+  margin-right: 20px;
+
+  width: 250px;
+  height: auto;
+
+
+}
+ a:link{
+  text-decoration: none;
+
+}
+.sosyal-medya {
+  border-style: groove;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.sosyal-medya ul li {
+  margin-left: 20px;
+}
+
+.sosyal-medya h2{
+  margin-left: 20px;
+}
+
+.kategori{
+  border-style: groove;
+  border-radius: 5px;
+  margin-top:50px;
+
+}
+.kategori ul li {
+  margin-left: 20px;
+}
+
+.kategori h2{
+  margin-left: 20px;
+}
+
+.sag-nav ul li {
+float: left;
+padding-right: 10px;
+list-style-type:none;
+}
+.baslik{
+  text-align: center;
+}
+.post{
+padding: 10px;
+width: 750px;
+
+}
+.ayrinti{
+  min-height: 750px;
+  width: 750px;
+
+
+}
+#conteiner{
+  width: 100%;
+  height: 100%;
+
+}
+/*.silB {
+  float: right;
+
+}
+.editB{
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+}*/
+.yorum{
+  min-height: 300px;
+
+}
+
+.post:hover{
+  border-left-color: black;
+  border-left-style:  groove;
+  background-color: #f5f5f5;
+ }
+
+ .post:hover a{
+
+   font-size:40px;
+
+ }
+
+.left{
+  margin-left: 10px;
+  float: left;
+}
+.right{
+  margin-right: 10px;
+  float: right;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}

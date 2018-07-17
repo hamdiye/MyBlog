@@ -1,0 +1,2 @@
+class AddPostIdToComment < ApplicationRecord
+end
